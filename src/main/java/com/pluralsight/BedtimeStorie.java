@@ -16,16 +16,16 @@ public class BedtimeStorie {
             BufferedReader bufferedReader = new BufferedReader(file);
 
             String line;
+            String numbered = "0.";
 
             while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
+                System.out.println(numbered + line);
             }
             bufferedReader.close();
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
             System.out.println("Oops, something went wrong.");
-
         }
     }
 }
